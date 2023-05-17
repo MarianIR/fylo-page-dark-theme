@@ -1,0 +1,30 @@
+@mixin mainParagraph {
+  font-size: clamp($fontSize, 6vw, 2.5rem);
+  color: $neutralColor;
+  margin: 2rem auto;
+  max-width: 60rem;
+  padding: 0 1rem;
+}
+@mixin getStartedButton {
+  margin: 1rem auto 5rem;
+  background: linear-gradient(90deg, $accentColor1, $accentColor2);
+  padding: 1.5rem 2rem;
+  border-radius: 5rem;
+  border: none;
+  width: 70%;
+  max-width: 35rem;
+  color: $neutralColor;
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: pointer;
+  &:hover {
+    background: rgb(144, 251, 251);
+  }
+}
+
+@mixin icon {
+  position: relative;
+  top: -1rem;
+  width: 2rem;
+  height: 2.5rem;
+}
